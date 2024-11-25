@@ -97,10 +97,10 @@ void BlinkLedOneTask(void *params)
     for (;;)
     {
         GPIO_WritePin(GPIOA, led_one_pin, GPIO_PIN_LOW);
-        vTaskDelay(pdMS_TO_TICKS(100));
+        vTaskDelay(pdMS_TO_TICKS(1000));
 
         GPIO_WritePin(GPIOA, led_one_pin, GPIO_PIN_HIGH);
-        vTaskDelay(pdMS_TO_TICKS(100));
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 
