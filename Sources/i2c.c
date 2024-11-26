@@ -124,5 +124,5 @@ void I2C_MasterSendByte(I2C_Config_t *pConfig, uint8_t byte)
     pConfig->pI2Cx->DR = byte;
 
     //Waiting for the TX buffer to be empty
-    while (!(pConfig->pI2Cx->SR1 & I2C_SR1_TXE))
+    while (!(pConfig->pI2Cx->SR1 & I2C_SR1_TXE));
 }
