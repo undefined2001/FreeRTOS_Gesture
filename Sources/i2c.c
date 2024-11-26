@@ -43,3 +43,12 @@ static void I2C_ResetACK(I2C_TypeDef *pI2Cx)
 void I2C_Init(I2C_Config_t *pConfig)
 {
 }
+
+/**
+ * @brief: Funciton for Sending a Byte
+ */
+
+void I2C_MasterSendByte(I2C_Config_t *Config, uint8_t byte)
+{
+    //Sending Byte
+}
