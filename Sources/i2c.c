@@ -52,6 +52,9 @@ void I2C1_Init()
 void I2C1_GenStart()
 {
     I2C1->CR1 |= I2C_CR1_START;
+
+    while (!(I2C1->SR1 & I2C_SR1_SB))
+        ;
 }
 
 /**
